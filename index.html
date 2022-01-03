@@ -13,112 +13,172 @@
     <nav class="nav">
         <h1 class="nav__tittle">Cake Shop</h1>
         <div class="nav__menu">
-            <i class='bx bx-x bx-md close-logo'></i>
             <ul class="nav__menu__items" >
-                <li class="nav__menu__items__item" > <a class="prueba" href="#">Inicio</a> </li>
-                <li class="nav__menu__items__item" > <a href="#">Catálogo</a> </li>
+                <li class="nav__menu__items__item" > <a href="#inicio">Inicio</a> </li>
+                <li class="nav__menu__items__item" > <a href="#catalogo">Catálogo</a> </li>
                 <li class="nav__menu__items__item" > <a href="#">Como ordenar</a> </li>
                 <li class="nav__menu__items__item" > <a href="#">Delivery</a> </li>
                 <li class="nav__menu__items__item" > <a href="#">Contáctanos</a> </li>
             </ul>
+            <i class='bx bx-x bx-md nav__menu__closeLogo'></i>
         </div>
         
-        <span class="material-icons item-search">search</span>
-        <i class='bx bx-menu bx-md menu-logo' ></i>
+        <span class="material-icons nav__menu__searchLogo">search</span>
+        <i class='bx bx-menu bx-md nav__menu__menuLogo' ></i>
     </nav>
     <div class="content">
-        <div class="cover">
-            <div class="cover-info">
-                <h1>Confección & preparado</h1>
-                <p>Delivery al instante en Arequipa</p>
-                <button type="button">Comprar ahora</button>
-                <div class="social">
-                    <a href="#" class="cover-social-link"><i class='bx bxl-facebook bx-md' ></i></a>
-                    <a href="#" class="cover-social-link"><i class='bx bxl-instagram bx-md' ></i></a>
-                    <a href="#" class="cover-social-link"><i class='bx bxl-whatsapp bx-md' ></i></a>
+        <div class="cover" id="inicio">
+            <div class="cover__info">
+                <h1 class="cover__info__title">Confección & preparado</h1>
+                <p class="cover__info__phrase">Delivery al instante en Arequipa</p>
+                <button type="button" class="cover__info__button">Comprar ahora</button>
+                <div class="cover__info__social">
+                    <a href="#" class="cover__info__social__link"><i class='bx bxl-facebook bx-md' ></i></a>
+                    <a href="#" class="cover__info__social__link"><i class='bx bxl-instagram bx-md' ></i></a>
+                    <a href="#" class="cover__info__social__link"><i class='bx bxl-whatsapp bx-md' ></i></a>
                 </div>
             </div>
-            <div class="cover-image">
+            <div class="cover__image">
                 <img src="src/images/tortadechocolate.png" alt="torta de chocolate">
             </div>
         </div>
-        <div class="catalog">
-            <h1>Catálogo</h1>
-            <div class="grid-catalog">
-                <div class="cake">
-                    <img src="src/images/tchocolate.png" alt="torta de chocolate">
-                   <div class="cake-info">
-                        <p>Torta de chocolate</p>
-                        <p class="price">80 s/.</p>
+        <div class="catalog section" id="catalogo">
+            <h1 class="catalog__title title">Catálogo</h1>
+            <div class="catalog__grid">
+                <div class="catalog__card">
+                    <img class="catalog__card__img" src="src/images/tchocolate.png" alt="torta de chocolate">
+                   <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de chocolate</p>
+                        <p class="catalog__card__info__price">80 s/.</p>
                    </div>
                 </div>
-                <div class="cake">
-                    <img src="src/images/tfrutas.png" alt="torta de frutas">
-                    <div class="cake-info">
-                        <p>Torta de frutas</p>
-                        <p class="price">90 s/.</p>
+                <div class="catalog__card">
+                    <img class="catalog__card__img" src="src/images/tfrutas.png" alt="torta de frutas">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de frutas</p>
+                        <p class="catalog__card__info__price">90 s/.</p>
                     </div>
                 </div>
-                <div class="cake featured">
-                    <img src="src/images/tboda.png" alt="torta de boda">
-                    <div class="cake-info">
-                        <p>Torta de boda</p>
-                        <p class="price">150 s/.</p>
+                <div class="catalog__card featured">
+                    <img class="catalog__card__img" src="src/images/tboda.png" alt="torta de boda">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de boda</p>
+                        <p class="catalog__card__info__price">150 s/.</p>
                     </div>
                 </div>
-                <div class="cake">
-                    <img src="src/images/tfresa.png" alt="torta de chocolate">
-                    <div class="cake-info">
-                        <p>Torta de fresa</p>
-                        <p class="price">80 s/.</p>
+                <div class="catalog__card">
+                    <img class="catalog__card__img" src="src/images/tfresa.png" alt="torta de chocolate">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de fresa</p>
+                        <p class="catalog__card__info__price">80 s/.</p>
                     </div>
                 </div>
-                <div class="cake">
-                    <img src="src/images/quequechocolate.png" alt="torta de chocolate">
-                    <div class="cake-info">
-                        <p>Torta de chocolate pequeña</p>
-                        <p class="price">70 s/.</p>
+                <div class="catalog__card">
+                    <img class="catalog__card__img" src="src/images/quequechocolate.png" alt="torta de chocolate">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de chocolate pequeña</p>
+                        <p class="catalog__card__info__price">70 s/.</p>
                     </div>
                 </div>
-                <div class="cake">
-                    <img src="src/images/tchocolate.png" alt="torta de frutas">
-                    <div class="cake-info">
-                        <p>Torta de Chocolate</p>
-                        <p class="price">90 s/.</p>
+                <div class="catalog__card">
+                    <img class="catalog__card__img" src="src/images/tchocolate.png" alt="torta de frutas">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta de Chocolate</p>
+                        <p class="catalog__card__info__price">90 s/.</p>
                     </div>
                 </div>
-                <div class="cake">
-                    <img src="src/images/tfrutas.png" alt="torta de chocolate">
-                    <div class="cake-info">
-                        <p>Torta frutada</p>
-                        <p class="price">80 s/.</p>
+                <div class="catalog__card">
+                    <img  src="src/images/tfrutas.png" alt="torta de chocolate">
+                    <div class="catalog__card__info">
+                        <p class="catalog__card__info__title" >Torta frutada</p>
+                        <p class="catalog__card__info__price">80 s/.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="advantages">
-            <h1>Nuestras ventajas</h1>
-            <div class="grid-advantages">
-                <div class="advantage">
-                    <img class="advantage-img" src="src/images/preparacion pastel.jpg" alt="preparacion pastel">
-                    <div class="advantage-info">
-                        <h2>Alta calidad</h2>
-                        <p>Pasteles echos a mano y con ingredientes naturales</p>
+        <div class="advantages items section"  id="ventajas">
+            <h1 class="items__title title">Nuestras ventajas</h1>
+            <div class="items__grid">
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/preparacion pastel.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Alta calidad</h2>
+                        <p class="items__item__info__phrase">Pasteles echos a mano y con ingredientes naturales</p>
                     </div>
                 </div>
-                <div class="advantage">
-                    <img class="advantage-img" src="src/images/caja-pasteles.jpg" alt="preparacion pastel">
-                    <div class="advantage-info">
-                        <h2>Dulce regalo</h2>
-                        <p>Cajas de regalos dulces y demas decoraciones para nuestros clientes</p>
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/caja-pasteles.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Dulce regalo</h2>
+                        <p class="items__item__info__phrase">Cajas de regalos dulces y demas decoraciones para nuestros clientes</p>
                     </div>
                 </div>
-                <div class="advantage">
-                    <img class="advantage-img" src="src/images/delivery.png" alt="preparacion pastel">
-                    <div class="advantage-info">
-                        <h2>Delivery rápido</h2>
-                        <p>Delívery el mismo día en Arequipa</p>
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/delivery.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Delivery rápido</h2>
+                        <p class="items__item__info__phrase">Delívery el mismo día en Arequipa</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="videoInfo section">
+            <h1 class="videoInfo__title title">Asi preparamos nuestros pasteles</h1>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/486806319?h=05d0de7b5e"  class="videoInfo__video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="ourChefs items section" id="ourChefs">
+            <h1 class="items__title title">Nuestros Chefs</h1>
+            <div class="items__grid">
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/chef1.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Juliana Sanchez</h2>
+                        <p class="items__item__info__phrase">Tecnica Profesional con 4 años de experiencia en la realizacion de pasteles artesanales.</p>
+                    </div>
+                </div>
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/chef2.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Gabriela Torres</h2>
+                        <p class="items__item__info__phrase">Chef sennior jefa de cocina, 6 años de experiencia, reconocida y condecorada en multiples ocaciones.</p>
+                    </div>
+                </div>
+                <div class="items__item">
+                    <img class="items__item__img" src="src/images/chef3.jpg" alt="preparacion pastel">
+                    <div class="items__item__info">
+                        <h2 class="items__item__info__title">Jimena Callacondo</h2>
+                        <p class="items__item__info__phrase">Con estudios en Francia tiene 3 años de experiencia, experta en pasteleria fina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <h1 class="reviews__title title">Reseñas</h1>
+            <div class="reviews__card">
+                <img  class="reviews__card__img"  src="src/images/review1.jpg" alt="cumpleaños pastel familia">
+               
+                <div class="reviews__card__info">
+                    <h2 class="reviews__card__info__name">Anna</h2>
+                    <p class="reviews__card__info__order">Ordeno un pastel de cumpleaños para su niña</p>
+                    <p class="reviews__card__info__review">"Queriamos que ese dia fuera muy especial, y para una fiesta especial nesecitabamos un pastel especial. La verdad estoy agradecida con el pastel ya que fue diferente y de un gusto exquisito. mis invitados estuvieron encantados. Sin duda alguna volvere a ordenar!."</p>
+                </div>
+            </div>
+            <div class="reviews__card">
+                <img  class="reviews__card__img"  src="src/images/review2.jpg" alt="cumpleaños pastel familia">
+               
+                <div class="reviews__card__info">
+                    <h2 class="reviews__card__info__name">Juan y Luana</h2>
+                    <p class="reviews__card__info__order">Ordenaron un pastel de bodas</p>
+                    <p class="reviews__card__info__review">"Ordenamos un pastel de bodas. El pastel fue decoradas con frutas frescas, flores y el recubrimiento muy delicioso, entregaron el pastel impecablemente y debidamente colocado. Una grata experienecia y 100% recomendados."</p>
+                </div>
+            </div>
+            <div class="reviews__card">
+                <img  class="reviews__card__img"  src="src/images/review3.jpg" alt="cumpleaños pastel familia">
+               
+                <div class="reviews__card__info">
+                    <h2 class="reviews__card__info__name">Juliana</h2>
+                    <p class="reviews__card__info__order">Ordeno un pastel para los 15 años de su hija</p>
+                    <p class="reviews__card__info__review">"En una ocasion tan especial como los 15 de mi hija. Buscaba el pastel perfecto. Una amiga me recomendo y ordene, la calidad y el sabor del pastel me sorprendieron. Te da una sensacion de que es especial y eso realzo la fiesta. Agradecida y lo recomiendo totalmente."</p>
                 </div>
             </div>
         </div>

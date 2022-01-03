@@ -15,6 +15,14 @@
 body{
     background-color: var(--background-color);
     padding: 0 10vw;
+    font-size: 16px;
+
+    @media screen (max-width: 1024px) {
+        font-size: 14px;
+    }
+    @media screen (max-width: 426px) {
+        font-size: 12px;
+    }
 }
 ul{
     list-style: none;
@@ -29,4 +37,6 @@ h1, h2, h3{
 p{
     font-family: var(--font-p); 
 }
+
+
 
