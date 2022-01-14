@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="inicio">
         <h1 class="nav__tittle">Cake Shop</h1>
         <div class="nav__menu">
             <ul class="nav__menu__items" >
                 <li class="nav__menu__items__item" > <a href="#inicio">Inicio</a> </li>
                 <li class="nav__menu__items__item" > <a href="#catalogo">Catálogo</a> </li>
-                <li class="nav__menu__items__item" > <a href="#">Como ordenar</a> </li>
-                <li class="nav__menu__items__item" > <a href="#">Delivery</a> </li>
-                <li class="nav__menu__items__item" > <a href="#">Contáctanos</a> </li>
+                <li class="nav__menu__items__item" > <a href="#comoOrdenar">Como ordenar</a> </li>
+                <li class="nav__menu__items__item" > <a href="#delivery">Delivery</a> </li>
+                <li class="nav__menu__items__item" > <a href="#comoOrdenar">Contáctanos</a> </li>
             </ul>
             <i class='bx bx-x bx-md nav__menu__closeLogo'></i>
         </div>
@@ -27,7 +27,7 @@
         <i class='bx bx-menu bx-md nav__menu__menuLogo' ></i>
     </nav>
     <div class="content">
-        <div class="cover" id="inicio">
+        <div class="cover" >
             <div class="cover__info">
                 <h1 class="cover__info__title">Confección & preparado</h1>
                 <p class="cover__info__phrase">Delivery al instante en Arequipa</p>
@@ -126,7 +126,7 @@
             <h1 class="videoInfo__title title">Asi preparamos nuestros pasteles</h1>
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/486806319?h=05d0de7b5e"  class="videoInfo__video" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="ourChefs items section" id="ourChefs">
+        <div class="ourChefs items section" id="nuestrosChefs">
             <h1 class="items__title title">Nuestros Chefs</h1>
             <div class="items__grid">
                 <div class="items__item">
@@ -152,37 +152,109 @@
                 </div>
             </div>
         </div>
-        <div class="reviews">
+        
+        <div class="reviews section" id="reseñas">
             <h1 class="reviews__title title">Reseñas</h1>
-            <div class="reviews__card">
-                <img  class="reviews__card__img"  src="src/images/review1.jpg" alt="cumpleaños pastel familia">
-               
-                <div class="reviews__card__info">
-                    <h2 class="reviews__card__info__name">Anna</h2>
-                    <p class="reviews__card__info__order">Ordeno un pastel de cumpleaños para su niña</p>
-                    <p class="reviews__card__info__review">"Queriamos que ese dia fuera muy especial, y para una fiesta especial nesecitabamos un pastel especial. La verdad estoy agradecida con el pastel ya que fue diferente y de un gusto exquisito. mis invitados estuvieron encantados. Sin duda alguna volvere a ordenar!."</p>
+            <div class="reviews__nav">
+                <i class='bx bx-chevron-left sliderArrow bx-sm' id="before"></i>
+                <div class="reviews__nav__info">
+                    <span class="cardNumber reviews__nav__info__fact">1</span>
+                    <span class="reviews__nav__info__fact">/</span>
+                    <span class="totalCards reviews__nav__info__fact">3</span>
                 </div>
+                <i class='bx bx-chevron-right sliderArrow bx-sm' id="after"></i>
             </div>
-            <div class="reviews__card">
-                <img  class="reviews__card__img"  src="src/images/review2.jpg" alt="cumpleaños pastel familia">
-               
-                <div class="reviews__card__info">
-                    <h2 class="reviews__card__info__name">Juan y Luana</h2>
-                    <p class="reviews__card__info__order">Ordenaron un pastel de bodas</p>
-                    <p class="reviews__card__info__review">"Ordenamos un pastel de bodas. El pastel fue decoradas con frutas frescas, flores y el recubrimiento muy delicioso, entregaron el pastel impecablemente y debidamente colocado. Una grata experienecia y 100% recomendados."</p>
-                </div>
-            </div>
-            <div class="reviews__card">
-                <img  class="reviews__card__img"  src="src/images/review3.jpg" alt="cumpleaños pastel familia">
-               
-                <div class="reviews__card__info">
-                    <h2 class="reviews__card__info__name">Juliana</h2>
-                    <p class="reviews__card__info__order">Ordeno un pastel para los 15 años de su hija</p>
-                    <p class="reviews__card__info__review">"En una ocasion tan especial como los 15 de mi hija. Buscaba el pastel perfecto. Una amiga me recomendo y ordene, la calidad y el sabor del pastel me sorprendieron. Te da una sensacion de que es especial y eso realzo la fiesta. Agradecida y lo recomiendo totalmente."</p>
+            <div class="slider">
+                <div class="sliderCards">
+                    <div class="sliderCards__card slider__card--show" data-id="1">
+                        <img  class="sliderCards__card__img"  src="src/images/review1.jpg" alt="cumpleaños pastel familia">
+                           
+                        <div class="sliderCards__card__info">
+                            <h2 class="sliderCards__card__info__name">Anna</h2>
+                            <p class="sliderCards__card__info__order">Ordeno un pastel de cumpleaños para su niña</p>
+                            <p class="sliderCards__card__info__review">"Queriamos que ese dia fuera muy especial, y para una fiesta especial nesecitabamos un pastel especial. La verdad estoy agradecida con el pastel ya que fue diferente y de un gusto exquisito. mis invitados estuvieron encantados. Sin duda alguna volvere a ordenar!."</p>
+                        </div>
+                    </div>
+                    <div class="sliderCards__card" data-id="2">
+                        <img  class="sliderCards__card__img"  src="src/images/review2.jpg" alt="cumpleaños pastel familia">
+                           
+                        <div class="sliderCards__card__info">
+                            <h2 class="sliderCards__card__info__name">Juan y Luana</h2>
+                            <p class="sliderCards__card__info__order">Ordenaron un pastel de bodas</p>
+                            <p class="sliderCards__card__info__review">"Ordenamos un pastel de bodas. El pastel fue decoradas con frutas frescas, flores y el recubrimiento muy delicioso, entregaron el pastel impecablemente y debidamente colocado. Una grata experienecia y 100% recomendados."</p>
+                        </div>
+                    </div>
+                    <div class="sliderCards__card" data-id="3">
+                        <img  class="sliderCards__card__img"  src="src/images/review3.jpg" alt="cumpleaños pastel familia">
+                           
+                        <div class="sliderCards__card__info">
+                            <h2 class="sliderCards__card__info__name">Juliana</h2>
+                            <p class="sliderCards__card__info__order">Ordeno un pastel para los 15 años de su hija</p>
+                            <p class="sliderCards__card__info__review">"En una ocasion tan especial como los 15 de mi hija. Buscaba el pastel perfecto. Una amiga me recomendo y ordene, la calidad y el sabor del pastel me sorprendieron. Te da una sensacion de que es especial y eso realzo la fiesta. Agradecida y lo recomiendo totalmente."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>    
+        <div class="howToOrder section" id="comoOrdenar">
+            <div class="howToOrder__grid">
+                <div class="howToOrder__grid__imageSection">
+                </div>
+                <div class="howToOrder__grid__infoSection">
+                    <h1 class="howToOrder__grid__infoSection__title">Como ordenar</h1>
+                    <p class="howToOrder__grid__infoSection__info">Por favor deja tu informacion de contacto y te contactaremos inmediatamente</p>
+                    <form action="" class="howToOrder__grid__infoSection__form">
+                        <div class="howToOrder__grid__infoSection__form__inputsSection">
+                            <input class="howToOrder__grid__infoSection__form__inputsSection__input" type="text" placeholder="Nombre">
+                            <input class="howToOrder__grid__infoSection__form__inputsSection__input" type="tel" placeholder="Celular">
+                        </div>
+                        <input class="howToOrder__grid__infoSection__form__button" type="submit" value="OK">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="delivery section" id="delivery">
+            <div class="delivery__grid">
+                <div class="delivery__grid__infoSection">
+                    <h1 class="delivery__grid__infoSection__title">Terminos de Delivery</h1>
+                    <ul class="delivery__grid__infoSection__list">
+                        <li class="delivery__grid__infoSection__list__item">Usamos los metodos mas rapidos de delivery para asegurar que tus productos lleguen en perfectas condiciones y listas para disfrutarlas.</li>
+                        <li class="delivery__grid__infoSection__list__item">Por favor danos entre 2 a 3 dias de plazo si ordenaste un producto personalizado.</li>
+                        <li class="delivery__grid__infoSection__list__item">Todos tus pasteles de fiesta seran enviadas en el lugar, dia y hora elegida.</li>
+                        <li class="delivery__grid__infoSection__list__item">Los productos pueden ser guardados hasta un maximo de 5 dias en el refrigerador.</li>
+                    </ul>
+                </div>
+                <div class="delivery__grid__imageSection">
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer>
+          <div class="footer__info">
+              <h2 class="footer__info__title">Cake Shop</h2>
+              <div class="footer__info__social">
+                <a href="#" class="footer__info__social__link"><i class='bx bxl-facebook bx-md' ></i></a>
+                <a href="#" class="footer__info__social__link"><i class='bx bxl-instagram bx-md' ></i></a>
+                <a href="#" class="footer__info__social__link"><i class='bx bxl-whatsapp bx-md' ></i></a>
+              </div>
+          </div>  
+          <div class="footer__menu">
+              <h2 class="footer__menu__title">Menu</h2>
+              <ul class="footer__menu__list" >
+                  <li class="footer__menu__list__item"><a href="#inicio" class="footer__menu__list__item__link">Inicio</a></li>
+                  <li class="footer__menu__list__item"><a href="#nuestrosChefs" class="footer__menu__list__item__link">Nuestro Equipo</a></li>
+                  <li class="footer__menu__list__item"><a href="#comoOrdenar" class="footer__menu__list__item__link">Como Ordenar</a></li>
+                  <li class="footer__menu__list__item"><a href="#catalogo" class="footer__menu__list__item__link">Catalogo</a></li>
+                  <li class="footer__menu__list__item"><a href="#reseñas" class="footer__menu__list__item__link">Reseñas</a></li>
+                  <li class="footer__menu__list__item"><a href="#delivery" class="footer__menu__list__item__link">Delivery</a></li>
+              </ul>
+          </div>
+          <div class="footer__contact">
+              <h2 class="footer__contact__title">Contáctanos</h2>
+              <p class="footer__contact__info">+51 987654321</p>
+              <p class="footer__contact__info">info@cakeshop.com</p>
+          </div>
+    </footer>  
     <script src="main.js"></script>
 </body>
 </html>

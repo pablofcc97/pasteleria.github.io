@@ -11,6 +11,10 @@
     --font-tittle: 'Playfair Display', serif;
     --font-p: 'helvetica';
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
 
 body{
     background-color: var(--background-color);
@@ -18,9 +22,6 @@ body{
     font-size: 16px;
 
     @media screen (max-width: 1024px) {
-        font-size: 14px;
-    }
-    @media screen (max-width: 426px) {
         font-size: 12px;
     }
 }
@@ -29,12 +30,16 @@ ul{
 }
 a{
     text-decoration: none;
-    color:var(--dark-color)
+    color:var(--dark-color);
+    font-family: var(--font-p);
 }
 h1, h2, h3{
     font-family: var(--font-tittle);
 }
 p{
+    font-family: var(--font-p); 
+}
+li{
     font-family: var(--font-p); 
 }
 
