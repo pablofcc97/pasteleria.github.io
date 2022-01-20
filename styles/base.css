@@ -25,6 +25,12 @@ body{
         font-size: 12px;
     }
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 ul{
     list-style: none;
 }
@@ -36,7 +42,7 @@ a{
 h1, h2, h3{
     font-family: var(--font-tittle);
 }
-p{
+p, span{
     font-family: var(--font-p); 
 }
 li{

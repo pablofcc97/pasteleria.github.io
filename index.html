@@ -7,6 +7,7 @@
     <title>pasteleria</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -44,58 +45,68 @@
         </div>
         <div class="catalog section" id="catalogo">
             <h1 class="catalog__title title">Catálogo</h1>
-            <div class="catalog__grid">
-                <div class="catalog__card">
-                    <img class="catalog__card__img" src="src/images/tchocolate.png" alt="torta de chocolate">
-                   <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de chocolate</p>
-                        <p class="catalog__card__info__price">80 s/.</p>
-                   </div>
-                </div>
-                <div class="catalog__card">
-                    <img class="catalog__card__img" src="src/images/tfrutas.png" alt="torta de frutas">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de frutas</p>
-                        <p class="catalog__card__info__price">90 s/.</p>
+            <div class="carousel catalog__carousel">
+                <div class="carousel__container">
+                    <div class="carousel__cards">
+                        <div class="carousel__cards__card carousel__card--show" data-id="1">
+                            <img src="src/images/tchocolate.png" alt="torta de chocolate cakeshop" class="carousel__cards__card__img">
+                            <div class="carousel__cards__card__info">
+                                <h1 class="carousel__cards__card__info__name">Torta de chocolate</h1>
+                                <p class="carousel__cards__card__info__description">Realizado con cacao peruano, es hecha enteramente a mano y se puede personalizar al gusto del cliente. Contiene manjar arequipeño y trufas. Es una explosion de sabores chocolateros.</p>
+                                <span class="carousel__cards__card__info__price">Precio: 150 s/.</span>
+                                <button class="carousel__cards__card__info__button">sepáralo</button>
+                            </div>
+                        </div>
+                        <div class="carousel__cards__card" data-id="2">
+                            <img src="src/images/tboda.png" alt="torta de chocolate cakeshop" class="carousel__cards__card__img">
+                            <div class="carousel__cards__card__info">
+                                <h1 class="carousel__cards__card__info__name">Torta de Bodas</h1>
+                                <p class="carousel__cards__card__info__description">Realizado con cacao peruano, es hecha enteramente a mano y se puede personalizar al gusto del cliente. Contiene manjar arequipeño y trufas. Es una explosion de sabores chocolateros.</p>
+                                <span class="carousel__cards__card__info__price">Precio: 250 s/.</span>
+                                <button class="carousel__cards__card__info__button">sepáralo</button>
+                            </div>
+                        </div> 
+                        <div class="carousel__cards__card" data-id="3">
+                            <img src="src/images/tfrutas.png" alt="torta de chocolate cakeshop" class="carousel__cards__card__img">
+                            <div class="carousel__cards__card__info">
+                                <h1 class="carousel__cards__card__info__name">Torta de Frutas</h1>
+                                <p class="carousel__cards__card__info__description">Realizado con cacao peruano, es hecha enteramente a mano y se puede personalizar al gusto del cliente. Contiene manjar arequipeño y trufas. Es una explosion de sabores chocolateros.</p>
+                                <span class="carousel__cards__card__info__price">Precio: 120 s/.</span>
+                                <button class="carousel__cards__card__info__button">sepáralo</button>
+                            </div>
+                        </div>
+                        <div class="carousel__cards__card" data-id="4">
+                            <img src="src/images/tfresa.png" alt="torta de chocolate cakeshop" class="carousel__cards__card__img">
+                            <div class="carousel__cards__card__info">
+                                <h1 class="carousel__cards__card__info__name">Torta de Fresa</h1>
+                                <p class="carousel__cards__card__info__description">Realizado con cacao peruano, es hecha enteramente a mano y se puede personalizar al gusto del cliente. Contiene manjar arequipeño y trufas. Es una explosion de sabores chocolateros.</p>
+                                <span class="carousel__cards__card__info__price">Precio: 140 s/.</span>
+                                <button class="carousel__cards__card__info__button">sepáralo</button>
+                            </div>
+                        </div>
+                        <div class="carousel__cards__card" data-id="5">
+                            <img src="src/images/quequechocolate.png" alt="torta de chocolate cakeshop" class="carousel__cards__card__img">
+                            <div class="carousel__cards__card__info">
+                                <h1 class="carousel__cards__card__info__name">Torta de chocolate</h1>
+                                <p class="carousel__cards__card__info__description">Realizado con cacao peruano, es hecha enteramente a mano y se puede personalizar al gusto del cliente. Contiene manjar arequipeño y trufas. Es una explosion de sabores chocolateros.</p>
+                                <span class="carousel__cards__card__info__price">Precio: 100 s/.</span>
+                                <button class="carousel__cards__card__info__button">sepáralo</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="catalog__card featured">
-                    <img class="catalog__card__img" src="src/images/tboda.png" alt="torta de boda">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de boda</p>
-                        <p class="catalog__card__info__price">150 s/.</p>
+                    <div class="carousel__nav">
+                        <i class='bx bx-chevron-left sliderArrow bx-sm carousel__before' id="before"></i>
+                        <div class="carousel__nav__content">
+                            <span class="carousel__nav__cardNumber">1</span>
+                            <span>/</span>
+                            <span class="carousel__nav__totalCards">5</span>
+                        </div>
+                        <i class='bx bx-chevron-right sliderArrow bx-sm carousel__after' id="after"></i>
                     </div>
-                </div>
-                <div class="catalog__card">
-                    <img class="catalog__card__img" src="src/images/tfresa.png" alt="torta de chocolate">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de fresa</p>
-                        <p class="catalog__card__info__price">80 s/.</p>
-                    </div>
-                </div>
-                <div class="catalog__card">
-                    <img class="catalog__card__img" src="src/images/quequechocolate.png" alt="torta de chocolate">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de chocolate pequeña</p>
-                        <p class="catalog__card__info__price">70 s/.</p>
-                    </div>
-                </div>
-                <div class="catalog__card">
-                    <img class="catalog__card__img" src="src/images/tchocolate.png" alt="torta de frutas">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta de Chocolate</p>
-                        <p class="catalog__card__info__price">90 s/.</p>
-                    </div>
-                </div>
-                <div class="catalog__card">
-                    <img  src="src/images/tfrutas.png" alt="torta de chocolate">
-                    <div class="catalog__card__info">
-                        <p class="catalog__card__info__title" >Torta frutada</p>
-                        <p class="catalog__card__info__price">80 s/.</p>
-                    </div>
-                </div>
-            </div>
+                </div>  
+            </div> 
         </div>
+        
         <div class="advantages items section"  id="ventajas">
             <h1 class="items__title title">Nuestras ventajas</h1>
             <div class="items__grid">
@@ -152,21 +163,20 @@
                 </div>
             </div>
         </div>
-        
         <div class="reviews section" id="reseñas">
             <h1 class="reviews__title title">Reseñas</h1>
             <div class="reviews__nav">
-                <i class='bx bx-chevron-left sliderArrow bx-sm' id="before"></i>
+                <i class='bx bx-chevron-left sliderArrow slider__before bx-sm' id="before"></i>
                 <div class="reviews__nav__info">
                     <span class="cardNumber reviews__nav__info__fact">1</span>
                     <span class="reviews__nav__info__fact">/</span>
                     <span class="totalCards reviews__nav__info__fact">3</span>
                 </div>
-                <i class='bx bx-chevron-right sliderArrow bx-sm' id="after"></i>
+                <i class='bx bx-chevron-right sliderArrow slider__after bx-sm' id="after"></i>
             </div>
             <div class="slider">
                 <div class="sliderCards">
-                    <div class="sliderCards__card slider__card--show" data-id="1">
+                    <div class="sliderCards__card slider__card--show" >
                         <img  class="sliderCards__card__img"  src="src/images/review1.jpg" alt="cumpleaños pastel familia">
                            
                         <div class="sliderCards__card__info">
@@ -175,7 +185,7 @@
                             <p class="sliderCards__card__info__review">"Queriamos que ese dia fuera muy especial, y para una fiesta especial nesecitabamos un pastel especial. La verdad estoy agradecida con el pastel ya que fue diferente y de un gusto exquisito. mis invitados estuvieron encantados. Sin duda alguna volvere a ordenar!."</p>
                         </div>
                     </div>
-                    <div class="sliderCards__card" data-id="2">
+                    <div class="sliderCards__card" >
                         <img  class="sliderCards__card__img"  src="src/images/review2.jpg" alt="cumpleaños pastel familia">
                            
                         <div class="sliderCards__card__info">
@@ -184,7 +194,7 @@
                             <p class="sliderCards__card__info__review">"Ordenamos un pastel de bodas. El pastel fue decoradas con frutas frescas, flores y el recubrimiento muy delicioso, entregaron el pastel impecablemente y debidamente colocado. Una grata experienecia y 100% recomendados."</p>
                         </div>
                     </div>
-                    <div class="sliderCards__card" data-id="3">
+                    <div class="sliderCards__card">
                         <img  class="sliderCards__card__img"  src="src/images/review3.jpg" alt="cumpleaños pastel familia">
                            
                         <div class="sliderCards__card__info">
@@ -255,6 +265,7 @@
               <p class="footer__contact__info">info@cakeshop.com</p>
           </div>
     </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
